@@ -1,61 +1,51 @@
 /*
-Name: 				Juyong Kim
-Subject: 			SENG1120
-Assignment: 		Assignment1
-Code Description: 	Basically a header file that contains all the functions in Node.cpp
+this is a template 
 */
-
-//MacroGuards
+//Macro Guards
 #ifndef NODE_H
 #define NODE_H
 
-//Libraries 
-#include <string>
+//Libraries
+#include <iostream>
 #include <cstdlib>
+#include <string>
 
-//Namespaces, for easier coding
+//namespaces
 using namespace std;
+//templates
+template <typename value_type>
 
-//Stating the class
 class Node
 {
-	//Stating public functions/variables within the Node.cpp
-	public:
-	
-		//Stating public variables, in this case typedef as string
-		typedef string dataType;
-		//Constructor
-		Node(const dataType& input = NULL, Node* nextInput = NULL, Node* previousInput = NULL);		
-		Node();
-		//Deconstructor
-		~Node();
-		
-		void setData(const dataType& newData);
-		
-		void setNext(Node* nextrecreateSentence);	
-		
-		void setPrevious(Node* previousrecreateSentence);
-		
-		dataType getCurrent() const;
-		
-		Node* getNext();
-		
-		Node* getPrevious();
-		
-		const Node* getNext() const;
-		
-		const Node* getPrevious() const;
-	
-	private:
-	
-		//Variable that stores data in the node
-		dataType data;
-		
-		//Variable that stores the data in the next node
-		Node* next;
-		
-		//Variable that stores the data in the previous node
-		Node* previous;
+    public:
+
+    Node(const value_type& inputData = value_type(), Node<value_type>* previousInput = NULL, Node<value_type>* nextInput = NULL);
+    
+    ~Node();
+
+    void setData(const value_type newData);
+    		
+    void setPrevious(Node<value_type>* newPrev);
+    		
+    void setNext(Node<value_type>* newNext);
+
+    value_type& getData();
+    		
+    const value_type& getData() const;
+    		
+    Node<value_type>* getPrevious();
+    		
+    const Node<value_type>* getPrevious() const;
+    		
+    Node<value_type>* getNext();
+    		
+    const  Node<value_type>* getNext() const;
+    		
+    private:
+    value_type data;              //data saved in node
+    Node<value_type>* next;     //pointer of next node
+    Node<value_type>* previous;     //pointer of previous
 
 };
+
 #endif

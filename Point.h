@@ -1,8 +1,7 @@
 /*
 1.has two double precision floating point values for x and y format is 4.2f
-2.has a method that calculates distance from current point to origin point
+2.has a method that calculates distance from current point to origin point(needs a linked list)
 3.has a method that outputs double point into a string
-4.
 */
 
 #ifndef POINT_H
@@ -35,7 +34,7 @@ class Point
 
     double xValue;
     double yValue;
-    //point saved in string value
-    string p;
+    string p;       //(x,y) point saved in string value
+    double d;       //point distance from origin
 };
 #endif

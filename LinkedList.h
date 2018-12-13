@@ -1,9 +1,6 @@
-/*
-Name: 				Juyong Kim
-Subject: 			SENG1120
-Assignment: 		Assignment1`
-Code Description: 	Basically a header file that contains all the functions in LinkedList.cpp
-*/
+//circular double linkedlist aka, tail and head is linked
+//and can go back and forth
+//is used for objects
 
 //MacroGuards
 #ifndef LINKEDLIST_H

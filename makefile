@@ -1,7 +1,7 @@
 CC=g++
 CFLAGS=-c -Wall -std=c++11
 LDFLAGS=
-SOURCES=Point.cpp Main.cpp
+SOURCES=Point.cpp Main.cpp Node.hpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=Main
 

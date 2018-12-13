@@ -1,21 +1,7 @@
-/*
-Name: 				Juyong Kim
-Subject: 			SENG1120
-Assignment: 		Assignment1`
-Code Description: 	The place where the magic begins in the wonderous world of Narnia...
-					I mean the linkedlist. This place using incredibly well crafted code
-					manipulates the space time continuem to create a singular linked list
-					it has basic functionality to accept a string straight into a class and 
-					splinters into seperate nodes so you  get have fun jumbling the words 
-					around or "making them magically disappear". I'm stressed out as hell
-					and i wanted to have some fun, hope you enjoyed it. Cause i as sure didn't 
-					making this work with all the seg faults...... ALL THE SEG FAULTS
-*/
 
 //Libraries
 #include "LinkedList.h"
 
-//NameSpace for simplicities sake
 using namespace std;
 
 	//LinkedList Empty Constructor sets recreateSentences to Null and list length to zero

@@ -8,19 +8,21 @@ hense i got marked down for it. which is quite fair*/
 #include <iostream>
 #include <iomanip>      // std::setprecision
 #include "Point.h"
+#include "Node.h"
 
 using namespace std;
 
 int main()
 {		
-//	double x = 12;
-//	double y = 24;
 	cout << "start" << endl;
-	Point one(12,24);
-//	one.setX(x);
-//	one.setY(y);
-	cout << one.getX() << endl;
-	cout << one.getY() << endl;
+	Point one(12.234534,24.23415);
+
+	//note you can't change a double
+	//but you can change how it is printed or shown
+	cout << fixed << setprecision(2) << one.getX() << endl;
+	cout << fixed << setprecision(2) << one.getY() << endl;
+
+	//printing
 	cout << one.getP() << endl;
 	one.printString();
 
