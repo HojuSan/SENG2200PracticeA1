@@ -50,10 +50,7 @@ using namespace std;
 		tail = NULL;														
 		current = NULL;														
 	}
-	
-	//From the construtor it basically splinters the string into individual words
-	//which is then saved in an individual node, has an instance for adding normally then
-	//one special case when it reaches the end of the string which would be the last word
+	//adds value to a node then concatenates to back of linkedlist
 	void LinkedList::add(dataType data)
 	{
 		int i = 0;															//counter						

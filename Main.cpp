@@ -6,11 +6,24 @@ also to use the make file type in "make" not g++ -o that is calling the compiler
 hense i got marked down for it. which is quite fair*/
 
 #include <iostream>
+#include <iomanip>      // std::setprecision
+#include "Point.h"
 
 using namespace std;
 
 int main()
 {		
-	cout << "This shit works" << endl;
+//	double x = 12;
+//	double y = 24;
+	cout << "start" << endl;
+	Point one(12,24);
+//	one.setX(x);
+//	one.setY(y);
+	cout << one.getX() << endl;
+	cout << one.getY() << endl;
+	cout << one.getP() << endl;
+	one.printString();
+
+	cout << "end" << endl;
 	return 0;
 }

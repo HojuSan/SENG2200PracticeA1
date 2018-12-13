@@ -10,29 +10,28 @@ Code Description: 	has all the basic functions to create nodes in a linkedlist
 #include <cstdlib>
 #include "Node.h"
 
-//NameSpace for simplicities sake
 using namespace std;														
-
-	//The non empty Constructor, stores the data of what was passed in or sets default recreateSentences to null
-	Node::Node(const dataType& input, Node* nextInput, Node* previousInput)
-	{
-		data = input;													//Sets data to what was passed in
-		next = nextInput;												//Sets next to what was passed in
-		previous = previousInput;										//Sets previous to what was passed in
-	}
 
 	//The epmty Constructor
 	Node::Node()
 	{
-		data = "";														//Sets data to be empty
-		next = NULL;													//Sets next to NULL
-		previous = NULL;												//Sets prev to NULL
+		data = "";														
+		next = NULL;													
+		previous = NULL;												
 	}
 
+	//The non empty Constructor, stores the data of what was passed in or sets default recreateSentences to null
+	Node::Node(const dataType& input, Node* nextInput, Node* previousInput)
+	{
+		data = input;									
+		next = nextInput;								
+		previous = previousInput;										
+	}
+	
 	//empty Deconstructor
 	Node::~Node()
 	{
-		
+
 	}
 	
 	//Sets the data in the node
